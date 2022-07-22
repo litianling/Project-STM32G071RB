@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"pwm_timer\startup_stm32g071xx.o"
+"pwm_timer\main.o"
+"pwm_timer\stm32g0xx_it.o"
+"pwm_timer\stm32g0xx_hal_msp.o"
+"pwm_timer\stm32g0xx_hal_tim.o"
+"pwm_timer\stm32g0xx_hal_tim_ex.o"
+"pwm_timer\stm32g0xx_hal_rcc.o"
+"pwm_timer\stm32g0xx_hal_rcc_ex.o"
+"pwm_timer\stm32g0xx_ll_rcc.o"
+"pwm_timer\stm32g0xx_hal_flash.o"
+"pwm_timer\stm32g0xx_hal_flash_ex.o"
+"pwm_timer\stm32g0xx_hal_gpio.o"
+"pwm_timer\stm32g0xx_hal_dma.o"
+"pwm_timer\stm32g0xx_hal_dma_ex.o"
+"pwm_timer\stm32g0xx_ll_dma.o"
+"pwm_timer\stm32g0xx_hal_pwr.o"
+"pwm_timer\stm32g0xx_hal_pwr_ex.o"
+"pwm_timer\stm32g0xx_hal_cortex.o"
+"pwm_timer\stm32g0xx_hal.o"
+"pwm_timer\stm32g0xx_hal_exti.o"
+"pwm_timer\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "PWM_Timer\PWM_Timer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_Timer.map" -o PWM_Timer\PWM_Timer.axf

@@ -1,0 +1,12 @@
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\src\idle.c
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rthw.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+top\idle.o: .\RTE\RTOS\rtconfig.h
+top\idle.o: .\RTE\RTOS\finsh_config.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+top\idle.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtm.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+top\idle.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\components\finsh\finsh_api.h

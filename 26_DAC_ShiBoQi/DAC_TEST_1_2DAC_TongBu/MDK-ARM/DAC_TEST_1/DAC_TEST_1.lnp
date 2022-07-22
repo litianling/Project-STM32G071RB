@@ -1,0 +1,17 @@
+--cpu Cortex-M0+
+"dac_test_1\startup_stm32g071xx.o"
+"dac_test_1\main.o"
+"dac_test_1\stm32g0xx_it.o"
+"dac_test_1\stm32g0xx_ll_gpio.o"
+"dac_test_1\stm32g0xx_ll_exti.o"
+"dac_test_1\stm32g0xx_ll_dac.o"
+"dac_test_1\stm32g0xx_ll_dma.o"
+"dac_test_1\stm32g0xx_ll_rcc.o"
+"dac_test_1\stm32g0xx_ll_utils.o"
+"dac_test_1\stm32g0xx_ll_pwr.o"
+"dac_test_1\stm32g0xx_ll_tim.o"
+"dac_test_1\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "DAC_TEST_1\DAC_TEST_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DAC_TEST_1.map" -o DAC_TEST_1\DAC_TEST_1.axf

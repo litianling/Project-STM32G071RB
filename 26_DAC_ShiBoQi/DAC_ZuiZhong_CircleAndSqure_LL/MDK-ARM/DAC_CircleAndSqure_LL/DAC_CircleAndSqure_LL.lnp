@@ -1,0 +1,17 @@
+--cpu Cortex-M0+
+"dac_circleandsqure_ll\startup_stm32g071xx.o"
+"dac_circleandsqure_ll\main.o"
+"dac_circleandsqure_ll\stm32g0xx_it.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_gpio.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_exti.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_dac.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_dma.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_rcc.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_utils.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_pwr.o"
+"dac_circleandsqure_ll\stm32g0xx_ll_tim.o"
+"dac_circleandsqure_ll\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "DAC_CircleAndSqure_LL\DAC_CircleAndSqure_LL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DAC_CircleAndSqure_LL.map" -o DAC_CircleAndSqure_LL\DAC_CircleAndSqure_LL.axf

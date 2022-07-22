@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"ld4interrupt_new\startup_stm32g071xx.o"
+"ld4interrupt_new\main.o"
+"ld4interrupt_new\stm32g0xx_it.o"
+"ld4interrupt_new\stm32g0xx_hal_msp.o"
+"ld4interrupt_new\stm32g0xx_hal_tim.o"
+"ld4interrupt_new\stm32g0xx_hal_tim_ex.o"
+"ld4interrupt_new\stm32g0xx_hal_rcc.o"
+"ld4interrupt_new\stm32g0xx_hal_rcc_ex.o"
+"ld4interrupt_new\stm32g0xx_ll_rcc.o"
+"ld4interrupt_new\stm32g0xx_hal_flash.o"
+"ld4interrupt_new\stm32g0xx_hal_flash_ex.o"
+"ld4interrupt_new\stm32g0xx_hal_gpio.o"
+"ld4interrupt_new\stm32g0xx_hal_dma.o"
+"ld4interrupt_new\stm32g0xx_hal_dma_ex.o"
+"ld4interrupt_new\stm32g0xx_ll_dma.o"
+"ld4interrupt_new\stm32g0xx_hal_pwr.o"
+"ld4interrupt_new\stm32g0xx_hal_pwr_ex.o"
+"ld4interrupt_new\stm32g0xx_hal_cortex.o"
+"ld4interrupt_new\stm32g0xx_hal.o"
+"ld4interrupt_new\stm32g0xx_hal_exti.o"
+"ld4interrupt_new\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "LD4interrupt_NEW\LD4interrupt_NEW.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LD4interrupt_NEW.map" -o LD4interrupt_NEW\LD4interrupt_NEW.axf

@@ -1,0 +1,1 @@
+gpio_interrupt_test\startup_stm32g071xx.o: startup_stm32g071xx.s

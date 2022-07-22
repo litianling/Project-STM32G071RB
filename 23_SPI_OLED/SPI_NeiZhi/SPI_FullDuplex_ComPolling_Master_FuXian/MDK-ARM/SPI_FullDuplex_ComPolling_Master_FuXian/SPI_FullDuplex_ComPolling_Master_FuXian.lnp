@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"spi_fullduplex_compolling_master_fuxian\startup_stm32g071xx.o"
+"spi_fullduplex_compolling_master_fuxian\main.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_it.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_msp.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_spi.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_spi_ex.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_rcc.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_rcc_ex.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_ll_rcc.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_flash.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_flash_ex.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_gpio.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_dma.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_dma_ex.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_ll_dma.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_pwr.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_pwr_ex.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_cortex.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_exti.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_tim.o"
+"spi_fullduplex_compolling_master_fuxian\stm32g0xx_hal_tim_ex.o"
+"spi_fullduplex_compolling_master_fuxian\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "SPI_FullDuplex_ComPolling_Master_FuXian\SPI_FullDuplex_ComPolling_Master_FuXian.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_FullDuplex_ComPolling_Master_FuXian.map" -o SPI_FullDuplex_ComPolling_Master_FuXian\SPI_FullDuplex_ComPolling_Master_FuXian.axf

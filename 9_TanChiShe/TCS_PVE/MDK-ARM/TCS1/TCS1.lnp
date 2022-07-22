@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"tcs1\startup_stm32g071xx.o"
+"tcs1\main.o"
+"tcs1\stm32g0xx_it.o"
+"tcs1\stm32g0xx_hal_msp.o"
+"tcs1\stm32g0xx_hal_tim.o"
+"tcs1\stm32g0xx_hal_tim_ex.o"
+"tcs1\stm32g0xx_hal_rcc.o"
+"tcs1\stm32g0xx_hal_rcc_ex.o"
+"tcs1\stm32g0xx_ll_rcc.o"
+"tcs1\stm32g0xx_hal_flash.o"
+"tcs1\stm32g0xx_hal_flash_ex.o"
+"tcs1\stm32g0xx_hal_gpio.o"
+"tcs1\stm32g0xx_hal_dma.o"
+"tcs1\stm32g0xx_hal_dma_ex.o"
+"tcs1\stm32g0xx_ll_dma.o"
+"tcs1\stm32g0xx_hal_pwr.o"
+"tcs1\stm32g0xx_hal_pwr_ex.o"
+"tcs1\stm32g0xx_hal_cortex.o"
+"tcs1\stm32g0xx_hal.o"
+"tcs1\stm32g0xx_hal_exti.o"
+"tcs1\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "TCS1\TCS1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TCS1.map" -o TCS1\TCS1.axf

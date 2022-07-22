@@ -1,0 +1,1 @@
+i2c_twoboards_compolling\exe\startup_stm32g071xx.o: startup_stm32g071xx.s

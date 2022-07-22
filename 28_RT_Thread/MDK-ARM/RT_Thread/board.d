@@ -1,0 +1,12 @@
+rt_thread\board.o: RTE\RTOS\board.c
+rt_thread\board.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rthw.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+rt_thread\board.o: .\RTE\RTOS\rtconfig.h
+rt_thread\board.o: .\RTE\_RT_Thread\RTE_Components.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+rt_thread\board.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtm.h
+rt_thread\board.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h

@@ -1,0 +1,12 @@
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\src\kservice.c
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+top\kservice.o: .\RTE\RTOS\rtconfig.h
+top\kservice.o: .\RTE\RTOS\finsh_config.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+top\kservice.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtm.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\components\finsh\finsh_api.h
+top\kservice.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rthw.h

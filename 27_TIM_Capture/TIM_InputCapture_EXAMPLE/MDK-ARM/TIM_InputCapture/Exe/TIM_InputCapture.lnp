@@ -1,0 +1,24 @@
+--cpu Cortex-M0+
+"tim_inputcapture\exe\startup_stm32g071xx.o"
+"tim_inputcapture\exe\main.o"
+"tim_inputcapture\exe\stm32g0xx_it.o"
+"tim_inputcapture\exe\stm32g0xx_hal_msp.o"
+"tim_inputcapture\exe\stm32g0xx_nucleo.o"
+"tim_inputcapture\exe\stm32g0xx_hal_gpio.o"
+"tim_inputcapture\exe\stm32g0xx_hal_tim.o"
+"tim_inputcapture\exe\stm32g0xx_hal_tim_ex.o"
+"tim_inputcapture\exe\stm32g0xx_hal_rcc.o"
+"tim_inputcapture\exe\stm32g0xx_hal_rcc_ex.o"
+"tim_inputcapture\exe\stm32g0xx_hal_flash.o"
+"tim_inputcapture\exe\stm32g0xx_hal_flash_ex.o"
+"tim_inputcapture\exe\stm32g0xx_hal_dma.o"
+"tim_inputcapture\exe\stm32g0xx_hal_dma_ex.o"
+"tim_inputcapture\exe\stm32g0xx_hal_pwr.o"
+"tim_inputcapture\exe\stm32g0xx_hal_pwr_ex.o"
+"tim_inputcapture\exe\stm32g0xx_hal_cortex.o"
+"tim_inputcapture\exe\stm32g0xx_hal.o"
+"tim_inputcapture\exe\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "TIM_InputCapture\Exe\TIM_InputCapture.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIM_InputCapture.map" -o TIM_InputCapture\Exe\TIM_InputCapture.axf

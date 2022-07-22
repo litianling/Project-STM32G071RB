@@ -1,0 +1,4 @@
+"main.obj",
+"TFT32.obj" 
+TO "top" 
+RAMSIZE(256) 

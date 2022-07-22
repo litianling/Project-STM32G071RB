@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"lowpowerdesignlcd1602\startup_stm32g071xx.o"
+"lowpowerdesignlcd1602\main.o"
+"lowpowerdesignlcd1602\stm32g0xx_it.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_msp.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_rtc.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_rtc_ex.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_rcc.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_rcc_ex.o"
+"lowpowerdesignlcd1602\stm32g0xx_ll_rcc.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_flash.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_flash_ex.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_gpio.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_dma.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_dma_ex.o"
+"lowpowerdesignlcd1602\stm32g0xx_ll_dma.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_pwr.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_pwr_ex.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_cortex.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_exti.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_tim.o"
+"lowpowerdesignlcd1602\stm32g0xx_hal_tim_ex.o"
+"lowpowerdesignlcd1602\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "LowPowerDesignLCD1602\LowPowerDesignLCD1602.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LowPowerDesignLCD1602.map" -o LowPowerDesignLCD1602\LowPowerDesignLCD1602.axf

@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"iic_oled_neizhi\startup_stm32g071xx.o"
+"iic_oled_neizhi\main.o"
+"iic_oled_neizhi\stm32g0xx_it.o"
+"iic_oled_neizhi\stm32g0xx_hal_msp.o"
+"iic_oled_neizhi\stm32g0xx_hal_i2c.o"
+"iic_oled_neizhi\stm32g0xx_hal_i2c_ex.o"
+"iic_oled_neizhi\stm32g0xx_hal_rcc.o"
+"iic_oled_neizhi\stm32g0xx_hal_rcc_ex.o"
+"iic_oled_neizhi\stm32g0xx_ll_rcc.o"
+"iic_oled_neizhi\stm32g0xx_hal_flash.o"
+"iic_oled_neizhi\stm32g0xx_hal_flash_ex.o"
+"iic_oled_neizhi\stm32g0xx_hal_gpio.o"
+"iic_oled_neizhi\stm32g0xx_hal_dma.o"
+"iic_oled_neizhi\stm32g0xx_hal_dma_ex.o"
+"iic_oled_neizhi\stm32g0xx_ll_dma.o"
+"iic_oled_neizhi\stm32g0xx_hal_pwr.o"
+"iic_oled_neizhi\stm32g0xx_hal_pwr_ex.o"
+"iic_oled_neizhi\stm32g0xx_hal_cortex.o"
+"iic_oled_neizhi\stm32g0xx_hal.o"
+"iic_oled_neizhi\stm32g0xx_hal_exti.o"
+"iic_oled_neizhi\stm32g0xx_hal_tim.o"
+"iic_oled_neizhi\stm32g0xx_hal_tim_ex.o"
+"iic_oled_neizhi\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "IIC_OLED_NeiZhi\IIC_OLED_NeiZhi.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IIC_OLED_NeiZhi.map" -o IIC_OLED_NeiZhi\IIC_OLED_NeiZhi.axf

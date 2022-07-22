@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"dma_ld4\startup_stm32g071xx.o"
+"dma_ld4\main.o"
+"dma_ld4\stm32g0xx_it.o"
+"dma_ld4\stm32g0xx_hal_msp.o"
+"dma_ld4\stm32g0xx_hal_tim.o"
+"dma_ld4\stm32g0xx_hal_tim_ex.o"
+"dma_ld4\stm32g0xx_hal_rcc.o"
+"dma_ld4\stm32g0xx_hal_rcc_ex.o"
+"dma_ld4\stm32g0xx_ll_rcc.o"
+"dma_ld4\stm32g0xx_hal_flash.o"
+"dma_ld4\stm32g0xx_hal_flash_ex.o"
+"dma_ld4\stm32g0xx_hal_gpio.o"
+"dma_ld4\stm32g0xx_hal_dma.o"
+"dma_ld4\stm32g0xx_hal_dma_ex.o"
+"dma_ld4\stm32g0xx_ll_dma.o"
+"dma_ld4\stm32g0xx_hal_pwr.o"
+"dma_ld4\stm32g0xx_hal_pwr_ex.o"
+"dma_ld4\stm32g0xx_hal_cortex.o"
+"dma_ld4\stm32g0xx_hal.o"
+"dma_ld4\stm32g0xx_hal_exti.o"
+"dma_ld4\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "DMA_LD4\DMA_LD4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DMA_LD4.map" -o DMA_LD4\DMA_LD4.axf

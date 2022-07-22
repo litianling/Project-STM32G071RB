@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"fs_sx_test1\startup_stm32g071xx.o"
+"fs_sx_test1\main.o"
+"fs_sx_test1\stm32g0xx_it.o"
+"fs_sx_test1\stm32g0xx_hal_msp.o"
+"fs_sx_test1\stm32g0xx_hal_tim.o"
+"fs_sx_test1\stm32g0xx_hal_tim_ex.o"
+"fs_sx_test1\stm32g0xx_hal_rcc.o"
+"fs_sx_test1\stm32g0xx_hal_rcc_ex.o"
+"fs_sx_test1\stm32g0xx_ll_rcc.o"
+"fs_sx_test1\stm32g0xx_hal_flash.o"
+"fs_sx_test1\stm32g0xx_hal_flash_ex.o"
+"fs_sx_test1\stm32g0xx_hal_gpio.o"
+"fs_sx_test1\stm32g0xx_hal_dma.o"
+"fs_sx_test1\stm32g0xx_hal_dma_ex.o"
+"fs_sx_test1\stm32g0xx_ll_dma.o"
+"fs_sx_test1\stm32g0xx_hal_pwr.o"
+"fs_sx_test1\stm32g0xx_hal_pwr_ex.o"
+"fs_sx_test1\stm32g0xx_hal_cortex.o"
+"fs_sx_test1\stm32g0xx_hal.o"
+"fs_sx_test1\stm32g0xx_hal_exti.o"
+"fs_sx_test1\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "FS_SX_TEST1\FS_SX_TEST1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FS_SX_TEST1.map" -o FS_SX_TEST1\FS_SX_TEST1.axf

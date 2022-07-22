@@ -1,0 +1,14 @@
+--cpu Cortex-M0+
+"iwdg_ll\startup_stm32g071xx.o"
+"iwdg_ll\main.o"
+"iwdg_ll\stm32g0xx_it.o"
+"iwdg_ll\stm32g0xx_ll_gpio.o"
+"iwdg_ll\stm32g0xx_ll_exti.o"
+"iwdg_ll\stm32g0xx_ll_rcc.o"
+"iwdg_ll\stm32g0xx_ll_utils.o"
+"iwdg_ll\stm32g0xx_ll_pwr.o"
+"iwdg_ll\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "IWDG_LL\IWDG_LL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IWDG_LL.map" -o IWDG_LL\IWDG_LL.axf

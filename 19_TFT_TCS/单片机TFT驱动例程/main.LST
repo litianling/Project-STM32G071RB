@@ -1,0 +1,103 @@
+C51 COMPILER V9.56.0.0   MAIN                                                              10/19/2017 23:38:03 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "TFT32.h"
+   2          
+   3          bit flag=0;
+   4          bit busy=1;
+   5          
+   6          u8 x_h=0,x_l=0;
+   7          u8 y_h=0,y_l=0;
+   8          u16 x=0,y=0;
+   9          void spi_interruput() interrupt 9 using 1
+  10          {
+  11   1        clear_spi_status();
+  12   1        busy=0;
+  13   1      }
+  14          
+  15          void touch_interrtupt() interrupt 2 using 2
+  16          {
+  17   1         SS=0;
+  18   1         write_spi_data(0xD0);
+  19   1         while(busy);
+  20   1         busy=1;
+  21   1         write_spi_data(0x00);
+  22   1         while(busy);
+  23   1         x_h=read_spi_data();
+  24   1         busy=1; 
+  25   1         write_spi_data(0x00);
+  26   1         while(busy);
+  27   1         x_l=read_spi_data();
+  28   1         x=(x_h<<5)+(x_l>>3);
+  29   1         busy=1;
+  30   1         write_spi_data(0x90);
+  31   1         while(busy);
+  32   1         busy=1;
+  33   1         write_spi_data(0x00);
+  34   1         while(busy);
+  35   1         y_h=read_spi_data();
+  36   1         busy=1; 
+  37   1         write_spi_data(0x00);
+  38   1         while(busy);
+  39   1         y_l=read_spi_data(); 
+  40   1         busy=1;
+  41   1         SS=1;
+  42   1         y=(y_h<<5)+(y_l>>3);
+  43   1         
+  44   1      }
+  45           
+  46          void main()
+  47          {
+  48   1         u16 i=0;
+  49   1         set_p0_drive_mode(0x00,0x00);
+  50   1         set_p2_drive_mode(0x00,0x00);
+  51   1         set_spi_level(0x02,0x02);
+  52   1         set_spi_pin(0x08);
+  53   1         set_spi_mode(0xd3);
+  54   1         clear_spi_status();
+  55   1         SPSTAT=0xc0;
+C51 COMPILER V9.56.0.0   MAIN                                                              10/19/2017 23:38:03 PAGE 2   
+
+  56   1         int1_falling_edge;
+  57   1         enable_int1;
+  58   1         enable_spi_int;
+  59   1         gol_int;
+  60   1         reset_TFT();
+  61   1         ini_ILI9341();
+  62   1         while(1)
+  63   1         {
+  64   2      
+  65   2          /* if(flag==1)
+  66   2              flag=0;
+  67   2           display_horizontal_line();
+  68   2           Delayms(3000);
+  69   2           display_vertical_line();
+  70   2           Delayms(3000);
+  71   2           display_squares();
+  72   2           Delayms(3000);
+  73   2           display_circle();
+  74   2           Delayms(3000);
+  75   2           displayPIC();
+  76   2           Delayms(3000);  */
+  77   2         }
+  78   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    243    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      8       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      2    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

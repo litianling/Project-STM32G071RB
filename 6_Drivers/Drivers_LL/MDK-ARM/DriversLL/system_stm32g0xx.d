@@ -1,0 +1,10 @@
+driversll\system_stm32g0xx.o: ../Src/system_stm32g0xx.c
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Include/core_cm0plus.h
+driversll\system_stm32g0xx.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Include/cmsis_version.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+driversll\system_stm32g0xx.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h

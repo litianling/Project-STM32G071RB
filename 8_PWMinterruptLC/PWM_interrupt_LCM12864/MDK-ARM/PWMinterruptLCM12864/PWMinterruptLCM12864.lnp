@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"pwminterruptlcm12864\startup_stm32g071xx.o"
+"pwminterruptlcm12864\main.o"
+"pwminterruptlcm12864\stm32g0xx_it.o"
+"pwminterruptlcm12864\stm32g0xx_hal_msp.o"
+"pwminterruptlcm12864\stm32g0xx_hal_tim.o"
+"pwminterruptlcm12864\stm32g0xx_hal_tim_ex.o"
+"pwminterruptlcm12864\stm32g0xx_hal_rcc.o"
+"pwminterruptlcm12864\stm32g0xx_hal_rcc_ex.o"
+"pwminterruptlcm12864\stm32g0xx_ll_rcc.o"
+"pwminterruptlcm12864\stm32g0xx_hal_flash.o"
+"pwminterruptlcm12864\stm32g0xx_hal_flash_ex.o"
+"pwminterruptlcm12864\stm32g0xx_hal_gpio.o"
+"pwminterruptlcm12864\stm32g0xx_hal_dma.o"
+"pwminterruptlcm12864\stm32g0xx_hal_dma_ex.o"
+"pwminterruptlcm12864\stm32g0xx_ll_dma.o"
+"pwminterruptlcm12864\stm32g0xx_hal_pwr.o"
+"pwminterruptlcm12864\stm32g0xx_hal_pwr_ex.o"
+"pwminterruptlcm12864\stm32g0xx_hal_cortex.o"
+"pwminterruptlcm12864\stm32g0xx_hal.o"
+"pwminterruptlcm12864\stm32g0xx_hal_exti.o"
+"pwminterruptlcm12864\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "PWMinterruptLCM12864\PWMinterruptLCM12864.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWMinterruptLCM12864.map" -o PWMinterruptLCM12864\PWMinterruptLCM12864.axf

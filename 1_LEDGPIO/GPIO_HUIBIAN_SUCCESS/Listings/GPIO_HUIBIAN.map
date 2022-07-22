@@ -1,0 +1,170 @@
+Component: ARM Compiler 6.15 Tool: armlink [5dd79300]
+
+==============================================================================
+
+Section Cross References
+
+    startup_stm32g071xx.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32g071xx.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32g071xx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32g071xx.o(RESET) refers to startup_stm32g071xx.o(STACK) for __initial_sp
+    startup_stm32g071xx.o(RESET) refers to startup_stm32g071xx.o(.text) for Reset_Handler
+    startup_stm32g071xx.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32g071xx.o(.text) refers to startup_stm32g071xx.o(HEAP) for Heap_Mem
+    startup_stm32g071xx.o(.text) refers to startup_stm32g071xx.o(STACK) for Stack_Mem
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    startup_stm32g071xx.s                    0x00000000   Number         0  startup_stm32g071xx.o ABSOLUTE
+    RESET                                    0x08000000   Section      188  startup_stm32g071xx.o(RESET)
+    .text                                    0x080000bc   Section      148  startup_stm32g071xx.o(.text)
+    .text                                    0x08000150   Section        0  heapauxi.o(.text)
+    Heap_Mem                                 0x20000000   Data         512  startup_stm32g071xx.o(HEAP)
+    HEAP                                     0x20000000   Section      512  startup_stm32g071xx.o(HEAP)
+    Stack_Mem                                0x20000200   Data        1024  startup_stm32g071xx.o(STACK)
+    STACK                                    0x20000200   Section     1024  startup_stm32g071xx.o(STACK)
+    __initial_sp                             0x20000600   Data           0  startup_stm32g071xx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$A:L22$X:L11$S22$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors_Size                           0x000000bc   Number         0  startup_stm32g071xx.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32g071xx.o(RESET)
+    Reset_Handler                            0x080000bd   Thumb Code   106  startup_stm32g071xx.o(.text)
+    __Vectors_End                            0x080000bc   Data           0  startup_stm32g071xx.o(RESET)
+    NMI_Handler                              0x08000127   Thumb Code     2  startup_stm32g071xx.o(.text)
+    HardFault_Handler                        0x08000129   Thumb Code     2  startup_stm32g071xx.o(.text)
+    SVC_Handler                              0x0800012b   Thumb Code     2  startup_stm32g071xx.o(.text)
+    PendSV_Handler                           0x0800012d   Thumb Code     2  startup_stm32g071xx.o(.text)
+    SysTick_Handler                          0x0800012f   Thumb Code     2  startup_stm32g071xx.o(.text)
+    ADC1_COMP_IRQHandler                     0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    CEC_IRQHandler                           0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    DMA1_Ch4_7_DMAMUX1_OVR_IRQHandler        0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    DMA1_Channel1_IRQHandler                 0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    DMA1_Channel2_3_IRQHandler               0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    EXTI0_1_IRQHandler                       0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    EXTI2_3_IRQHandler                       0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    EXTI4_15_IRQHandler                      0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    FLASH_IRQHandler                         0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    I2C1_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    I2C2_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    PVD_IRQHandler                           0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    RCC_IRQHandler                           0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    RTC_TAMP_IRQHandler                      0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    SPI1_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    SPI2_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM14_IRQHandler                         0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM15_IRQHandler                         0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM16_IRQHandler                         0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM17_IRQHandler                         0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM1_BRK_UP_TRG_COM_IRQHandler           0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM1_CC_IRQHandler                       0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM2_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM3_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM6_DAC_LPTIM1_IRQHandler               0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    TIM7_LPTIM2_IRQHandler                   0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    UCPD1_2_IRQHandler                       0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    USART1_IRQHandler                        0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    USART2_IRQHandler                        0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    USART3_4_LPUART1_IRQHandler              0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    WWDG_IRQHandler                          0x08000131   Thumb Code     0  startup_stm32g071xx.o(.text)
+    __user_initial_stackheap                 0x08000135   Thumb Code     0  startup_stm32g071xx.o(.text)
+    __use_two_region_memory                  0x08000151   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x08000153   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x08000155   Thumb Code     2  heapauxi.o(.text)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000bd
+
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00000158, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000158, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000bc   Data   RO            3    RESET               startup_stm32g071xx.o
+    0x080000bc   0x080000bc   0x00000094   Code   RO            4  * .text               startup_stm32g071xx.o
+    0x08000150   0x08000150   0x00000006   Code   RO           12    .text               c_p.l(heapauxi.o)
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08000158, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x08000158, Size: 0x00000600, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000        -       0x00000200   Zero   RW            2    HEAP                startup_stm32g071xx.o
+    0x20000200        -       0x00000400   Zero   RW            1    STACK               startup_stm32g071xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       148         20        188          0       1536        644   startup_stm32g071xx.o
+
+    ----------------------------------------------------------------------
+       148         20        188          0       1536        644   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         6          0          0          0          0        136   heapauxi.o
+
+    ----------------------------------------------------------------------
+         8          0          0          0          0        136   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+         6          0          0          0          0        136   c_p.l
+
+    ----------------------------------------------------------------------
+         8          0          0          0          0        136   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       156         20        188          0       1536        780   Grand Totals
+       156         20        188          0       1536        780   ELF Image Totals
+       156         20        188          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  344 (   0.34kB)
+    Total RW  Size (RW Data + ZI Data)              1536 (   1.50kB)
+    Total ROM Size (Code + RO Data + RW Data)        344 (   0.34kB)
+
+==============================================================================
+

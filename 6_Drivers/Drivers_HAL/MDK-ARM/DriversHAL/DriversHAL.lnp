@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"drivershal\startup_stm32g071xx.o"
+"drivershal\main.o"
+"drivershal\stm32g0xx_it.o"
+"drivershal\stm32g0xx_hal_msp.o"
+"drivershal\stm32g0xx_hal_tim.o"
+"drivershal\stm32g0xx_hal_tim_ex.o"
+"drivershal\stm32g0xx_hal_rcc.o"
+"drivershal\stm32g0xx_hal_rcc_ex.o"
+"drivershal\stm32g0xx_ll_rcc.o"
+"drivershal\stm32g0xx_hal_flash.o"
+"drivershal\stm32g0xx_hal_flash_ex.o"
+"drivershal\stm32g0xx_hal_gpio.o"
+"drivershal\stm32g0xx_hal_dma.o"
+"drivershal\stm32g0xx_hal_dma_ex.o"
+"drivershal\stm32g0xx_ll_dma.o"
+"drivershal\stm32g0xx_hal_pwr.o"
+"drivershal\stm32g0xx_hal_pwr_ex.o"
+"drivershal\stm32g0xx_hal_cortex.o"
+"drivershal\stm32g0xx_hal.o"
+"drivershal\stm32g0xx_hal_exti.o"
+"drivershal\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "DriversHAL\DriversHAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DriversHAL.map" -o DriversHAL\DriversHAL.axf

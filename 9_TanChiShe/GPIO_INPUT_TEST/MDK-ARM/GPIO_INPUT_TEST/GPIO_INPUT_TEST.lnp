@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"gpio_input_test\startup_stm32g071xx.o"
+"gpio_input_test\main.o"
+"gpio_input_test\stm32g0xx_it.o"
+"gpio_input_test\stm32g0xx_hal_msp.o"
+"gpio_input_test\stm32g0xx_hal_tim.o"
+"gpio_input_test\stm32g0xx_hal_tim_ex.o"
+"gpio_input_test\stm32g0xx_hal_rcc.o"
+"gpio_input_test\stm32g0xx_hal_rcc_ex.o"
+"gpio_input_test\stm32g0xx_ll_rcc.o"
+"gpio_input_test\stm32g0xx_hal_flash.o"
+"gpio_input_test\stm32g0xx_hal_flash_ex.o"
+"gpio_input_test\stm32g0xx_hal_gpio.o"
+"gpio_input_test\stm32g0xx_hal_dma.o"
+"gpio_input_test\stm32g0xx_hal_dma_ex.o"
+"gpio_input_test\stm32g0xx_ll_dma.o"
+"gpio_input_test\stm32g0xx_hal_pwr.o"
+"gpio_input_test\stm32g0xx_hal_pwr_ex.o"
+"gpio_input_test\stm32g0xx_hal_cortex.o"
+"gpio_input_test\stm32g0xx_hal.o"
+"gpio_input_test\stm32g0xx_hal_exti.o"
+"gpio_input_test\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "GPIO_INPUT_TEST\GPIO_INPUT_TEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO_INPUT_TEST.map" -o GPIO_INPUT_TEST\GPIO_INPUT_TEST.axf

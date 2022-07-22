@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"rank\startup_stm32g071xx.o"
+"rank\main.o"
+"rank\stm32g0xx_it.o"
+"rank\stm32g0xx_hal_msp.o"
+"rank\stm32g0xx_hal_tim.o"
+"rank\stm32g0xx_hal_tim_ex.o"
+"rank\stm32g0xx_hal_rcc.o"
+"rank\stm32g0xx_hal_rcc_ex.o"
+"rank\stm32g0xx_ll_rcc.o"
+"rank\stm32g0xx_hal_flash.o"
+"rank\stm32g0xx_hal_flash_ex.o"
+"rank\stm32g0xx_hal_gpio.o"
+"rank\stm32g0xx_hal_dma.o"
+"rank\stm32g0xx_hal_dma_ex.o"
+"rank\stm32g0xx_ll_dma.o"
+"rank\stm32g0xx_hal_pwr.o"
+"rank\stm32g0xx_hal_pwr_ex.o"
+"rank\stm32g0xx_hal_cortex.o"
+"rank\stm32g0xx_hal.o"
+"rank\stm32g0xx_hal_exti.o"
+"rank\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "RANK\RANK.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RANK.map" -o RANK\RANK.axf

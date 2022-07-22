@@ -1,0 +1,24 @@
+--cpu Cortex-M0+
+"spi_fullduplex_compolling_slave\exe\startup_stm32g071xx.o"
+"spi_fullduplex_compolling_slave\exe\main.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_it.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_msp.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_nucleo.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_gpio.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_spi.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_spi_ex.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_rcc.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_rcc_ex.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_flash.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_flash_ex.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_dma.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_dma_ex.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_pwr.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_pwr_ex.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal_cortex.o"
+"spi_fullduplex_compolling_slave\exe\stm32g0xx_hal.o"
+"spi_fullduplex_compolling_slave\exe\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "SPI_FullDuplex_ComPolling_Slave\Exe\SPI_FullDuplex_ComPolling_Slave.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_FullDuplex_ComPolling_Slave.map" -o SPI_FullDuplex_ComPolling_Slave\Exe\SPI_FullDuplex_ComPolling_Slave.axf

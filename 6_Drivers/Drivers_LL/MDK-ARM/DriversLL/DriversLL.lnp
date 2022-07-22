@@ -1,0 +1,14 @@
+--cpu Cortex-M0+
+"driversll\startup_stm32g071xx.o"
+"driversll\main.o"
+"driversll\stm32g0xx_it.o"
+"driversll\stm32g0xx_ll_gpio.o"
+"driversll\stm32g0xx_ll_exti.o"
+"driversll\stm32g0xx_ll_pwr.o"
+"driversll\stm32g0xx_ll_rcc.o"
+"driversll\stm32g0xx_ll_utils.o"
+"driversll\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "DriversLL\DriversLL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DriversLL.map" -o DriversLL\DriversLL.axf

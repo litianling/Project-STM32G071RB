@@ -1,0 +1,118 @@
+Dependencies for Project 'IWDG_LL', Target 'IWDG_LL': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32g071xx.s)(0x60938A23)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "STM32G071xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g071xx.lst --xref -o iwdg_ll\startup_stm32g071xx.o --depend iwdg_ll\startup_stm32g071xx.d)
+F (../Src/main.c)(0x60939084)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\main.o --omf_browse iwdg_ll\main.crf --depend iwdg_ll\main.d)
+I (../Inc/main.h)(0x60938A1E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_iwdg.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_system.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_exti.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_pwr.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_gpio.h)(0x6069F55D)
+F (../Src/stm32g0xx_it.c)(0x60939138)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\stm32g0xx_it.o --omf_browse iwdg_ll\stm32g0xx_it.crf --depend iwdg_ll\stm32g0xx_it.d)
+I (../Inc/main.h)(0x60938A1E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_iwdg.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_system.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_exti.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_cortex.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_pwr.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dma.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_gpio.h)(0x6069F55D)
+I (../Inc/stm32g0xx_it.h)(0x60938A1D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_gpio.c)(0x6069F55D)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\stm32g0xx_ll_gpio.o --omf_browse iwdg_ll\stm32g0xx_ll_gpio.crf --depend iwdg_ll\stm32g0xx_ll_gpio.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_gpio.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h)(0x6069F55D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_exti.c)(0x6069F55D)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\stm32g0xx_ll_exti.o --omf_browse iwdg_ll\stm32g0xx_ll_exti.crf --depend iwdg_ll\stm32g0xx_ll_exti.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_exti.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c)(0x6069F55D)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\stm32g0xx_ll_rcc.o --omf_browse iwdg_ll\stm32g0xx_ll_rcc.crf --depend iwdg_ll\stm32g0xx_ll_rcc.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_utils.c)(0x60937941)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\stm32g0xx_ll_utils.o --omf_browse iwdg_ll\stm32g0xx_ll_utils.crf --depend iwdg_ll\stm32g0xx_ll_utils.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_utils.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_system.h)(0x6069F55D)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_pwr.h)(0x6069F55D)
+F (../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_pwr.c)(0x6069F55D)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\stm32g0xx_ll_pwr.o --omf_browse iwdg_ll\stm32g0xx_ll_pwr.crf --depend iwdg_ll\stm32g0xx_ll_pwr.d)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_pwr.h)(0x6069F55D)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)
+I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_bus.h)(0x6069F55D)
+F (../Src/system_stm32g0xx.c)(0x6069F53E)(--c99 -c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_IWDG_LL-ID:\Keil_MDK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_MDK\Keil\STM32G0xx_DFP\1.3.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="533" -D_RTE_ -DSTM32G071xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="48000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32G071xx-o iwdg_ll\system_stm32g0xx.o --omf_browse iwdg_ll\system_stm32g0xx.crf --depend iwdg_ll\system_stm32g0xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h)(0x6069F53E)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x6069F543)
+I (D:\Keil_MDK\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6069F543)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6069F543)
+I (../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h)(0x6069F53E)

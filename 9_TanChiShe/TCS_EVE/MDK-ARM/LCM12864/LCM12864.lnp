@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"lcm12864\startup_stm32g071xx.o"
+"lcm12864\main.o"
+"lcm12864\stm32g0xx_it.o"
+"lcm12864\stm32g0xx_hal_msp.o"
+"lcm12864\stm32g0xx_hal_tim.o"
+"lcm12864\stm32g0xx_hal_tim_ex.o"
+"lcm12864\stm32g0xx_hal_rcc.o"
+"lcm12864\stm32g0xx_hal_rcc_ex.o"
+"lcm12864\stm32g0xx_ll_rcc.o"
+"lcm12864\stm32g0xx_hal_flash.o"
+"lcm12864\stm32g0xx_hal_flash_ex.o"
+"lcm12864\stm32g0xx_hal_gpio.o"
+"lcm12864\stm32g0xx_hal_dma.o"
+"lcm12864\stm32g0xx_hal_dma_ex.o"
+"lcm12864\stm32g0xx_ll_dma.o"
+"lcm12864\stm32g0xx_hal_pwr.o"
+"lcm12864\stm32g0xx_hal_pwr_ex.o"
+"lcm12864\stm32g0xx_hal_cortex.o"
+"lcm12864\stm32g0xx_hal.o"
+"lcm12864\stm32g0xx_hal_exti.o"
+"lcm12864\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "LCM12864\LCM12864.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCM12864.map" -o LCM12864\LCM12864.axf

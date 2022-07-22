@@ -1,0 +1,1 @@
+hy_test_system_tx\startup_stm32g071xx.o: startup_stm32g071xx.s

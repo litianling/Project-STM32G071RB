@@ -1,0 +1,1 @@
+i2c_twoboards_compolling_shixian_8bit\startup_stm32g071xx.o: startup_stm32g071xx.s

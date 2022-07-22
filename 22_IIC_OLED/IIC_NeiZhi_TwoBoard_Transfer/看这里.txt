@@ -1,0 +1,1 @@
+参考历程I2C_TwoBoards_ComPolling_Example最好

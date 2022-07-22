@@ -1,0 +1,11 @@
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_exti.c
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_exti.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/core_cm0plus.h
+iwdg_ll\stm32g0xx_ll_exti.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_version.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+iwdg_ll\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h

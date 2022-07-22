@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+"led2hbsuccess\startup_stm32g071xx.o"
+"led2hbsuccess\main.o"
+"led2hbsuccess\gpio.o"
+"led2hbsuccess\stm32g0xx_it.o"
+"led2hbsuccess\stm32g0xx_hal_msp.o"
+"led2hbsuccess\stm32g0xx_hal_tim.o"
+"led2hbsuccess\stm32g0xx_hal_tim_ex.o"
+"led2hbsuccess\stm32g0xx_hal_rcc.o"
+"led2hbsuccess\stm32g0xx_hal_rcc_ex.o"
+"led2hbsuccess\stm32g0xx_ll_rcc.o"
+"led2hbsuccess\stm32g0xx_hal_flash.o"
+"led2hbsuccess\stm32g0xx_hal_flash_ex.o"
+"led2hbsuccess\stm32g0xx_hal_gpio.o"
+"led2hbsuccess\stm32g0xx_hal_dma.o"
+"led2hbsuccess\stm32g0xx_hal_dma_ex.o"
+"led2hbsuccess\stm32g0xx_ll_dma.o"
+"led2hbsuccess\stm32g0xx_hal_pwr.o"
+"led2hbsuccess\stm32g0xx_hal_pwr_ex.o"
+"led2hbsuccess\stm32g0xx_hal_cortex.o"
+"led2hbsuccess\stm32g0xx_hal.o"
+"led2hbsuccess\stm32g0xx_hal_exti.o"
+"led2hbsuccess\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "LED2HBSUCCESS\LED2HBSUCCESS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED2HBSUCCESS.map" -o LED2HBSUCCESS\LED2HBSUCCESS.axf

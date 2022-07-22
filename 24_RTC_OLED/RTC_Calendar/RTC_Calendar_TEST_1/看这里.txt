@@ -1,0 +1,11 @@
+	初始化RTC会出现问题
+此测试工程的解决办法如下：
+将RTC初始化函数MX_RTC_Init函数中带有 Error_Handler（）的三个部分注释掉。
+将if中执行的代码单独拿出，跳过初始化错误。
+	例如，注释：
+	if (HAL_RTC_Init(&hrtc) != HAL_OK)
+  	{
+	    Error_Handler();
+  	}
+	换成：
+	HAL_RTC_Init(&hrtc)

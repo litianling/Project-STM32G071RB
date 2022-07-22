@@ -1,0 +1,14 @@
+--cpu Cortex-M0+
+"lcd1602interruptnohal1\startup_stm32g071xx.o"
+"lcd1602interruptnohal1\main.o"
+"lcd1602interruptnohal1\stm32g0xx_it.o"
+"lcd1602interruptnohal1\stm32g0xx_ll_gpio.o"
+"lcd1602interruptnohal1\stm32g0xx_ll_exti.o"
+"lcd1602interruptnohal1\stm32g0xx_ll_pwr.o"
+"lcd1602interruptnohal1\stm32g0xx_ll_rcc.o"
+"lcd1602interruptnohal1\stm32g0xx_ll_utils.o"
+"lcd1602interruptnohal1\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "LCD1602interruptNoHAL1\LCD1602interruptNoHAL1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD1602interruptNoHAL1.map" -o LCD1602interruptNoHAL1\LCD1602interruptNoHAL1.axf

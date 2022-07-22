@@ -1,0 +1,1 @@
+spi_fullduplex_compolling_master_fuxian\startup_stm32g071xx.o: startup_stm32g071xx.s

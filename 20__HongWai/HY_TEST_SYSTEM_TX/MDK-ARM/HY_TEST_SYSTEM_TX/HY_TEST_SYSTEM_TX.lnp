@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"hy_test_system_tx\startup_stm32g071xx.o"
+"hy_test_system_tx\main.o"
+"hy_test_system_tx\stm32g0xx_it.o"
+"hy_test_system_tx\stm32g0xx_hal_msp.o"
+"hy_test_system_tx\stm32g0xx_hal_rcc.o"
+"hy_test_system_tx\stm32g0xx_hal_rcc_ex.o"
+"hy_test_system_tx\stm32g0xx_ll_rcc.o"
+"hy_test_system_tx\stm32g0xx_hal_flash.o"
+"hy_test_system_tx\stm32g0xx_hal_flash_ex.o"
+"hy_test_system_tx\stm32g0xx_hal_gpio.o"
+"hy_test_system_tx\stm32g0xx_hal_dma.o"
+"hy_test_system_tx\stm32g0xx_hal_dma_ex.o"
+"hy_test_system_tx\stm32g0xx_ll_dma.o"
+"hy_test_system_tx\stm32g0xx_hal_pwr.o"
+"hy_test_system_tx\stm32g0xx_hal_pwr_ex.o"
+"hy_test_system_tx\stm32g0xx_hal_cortex.o"
+"hy_test_system_tx\stm32g0xx_hal.o"
+"hy_test_system_tx\stm32g0xx_hal_exti.o"
+"hy_test_system_tx\stm32g0xx_hal_uart.o"
+"hy_test_system_tx\stm32g0xx_hal_uart_ex.o"
+"hy_test_system_tx\stm32g0xx_hal_tim.o"
+"hy_test_system_tx\stm32g0xx_hal_tim_ex.o"
+"hy_test_system_tx\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "HY_TEST_SYSTEM_TX\HY_TEST_SYSTEM_TX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HY_TEST_SYSTEM_TX.map" -o HY_TEST_SYSTEM_TX\HY_TEST_SYSTEM_TX.axf

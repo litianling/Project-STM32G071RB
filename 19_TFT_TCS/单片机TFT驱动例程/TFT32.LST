@@ -1,0 +1,450 @@
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE TFT32
+OBJECT MODULE PLACED IN TFT32.OBJ
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE TFT32.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include "TFT32.h"
+   2          #include "PICTURE.h"
+   3          
+   4          void set_p0_drive_mode(u8 a, u8 b)
+   5          {
+   6   1        P0M1=a;
+   7   1        P0M0=b;
+   8   1      }
+   9          void set_p2_drive_mode(u8 a, u8 b)
+  10          {
+  11   1        P2M1=a;
+  12   1        P2M0=b;
+  13   1      }
+  14          
+  15          void set_spi_level(u8 a, u8 b)
+  16          {
+  17   1         IP2=a;
+  18   1         IP2H=b;
+  19   1      }
+  20          
+  21          void set_spi_pin(u8 a)
+  22          {
+  23   1         P_SW1=a;
+  24   1      }
+  25          
+  26          void clear_spi_status(void)
+  27          {
+  28   1        SPSTAT=0xc0;
+  29   1      }
+  30          
+  31          void set_spi_mode(u8 a)
+  32          {
+  33   1         SPCTL=a;   
+  34   1      }
+  35          
+  36          void write_spi_data(u8 a)
+  37          {
+  38   1        SPDAT=a;
+  39   1      }
+  40          
+  41          u8 read_spi_data(void)
+  42          {
+  43   1        return(SPDAT);
+  44   1      }
+  45          
+  46          
+  47          void Delayms(u16 ms)    //delay function  
+  48          {
+  49   1        u16 a,b;
+  50   1        for(b=0;b<ms;b++)
+  51   1          for(a=0;a<250;a++)
+  52   1          {
+  53   2            ;
+  54   2            ;
+  55   2          }
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 2   
+
+  56   1      }
+  57          
+  58          void reset_TFT()
+  59          {
+  60   1         TFT32_RST=1;
+  61   1         Delayms(60);
+  62   1         TFT32_RST=0;
+  63   1         Delayms(60);
+  64   1         TFT32_RST=1;
+  65   1         Delayms(90);
+  66   1      }
+  67          void write_data(u8 i, u8 j)   
+  68          {
+  69   1        TFT32_RS=1;
+  70   1        TFT32_CS=0;
+  71   1        TFT32_WR=1;
+  72   1        TFT32_RD=1;
+  73   1        TFT32_DATA=i;
+  74   1        TFT32_WR=0;
+  75   1        _nop_();
+  76   1        _nop_();
+  77   1        _nop_();
+  78   1        _nop_();
+  79   1        TFT32_WR=1;
+  80   1        _nop_();
+  81   1        _nop_();
+  82   1        _nop_();
+  83   1        _nop_();
+  84   1        TFT32_DATA=j;
+  85   1        TFT32_WR=0;
+  86   1        _nop_();
+  87   1        _nop_();
+  88   1        _nop_();
+  89   1        _nop_();
+  90   1        TFT32_WR=1;
+  91   1        TFT32_CS=1;
+  92   1      }
+  93          
+  94          void data_out(u8 b)
+  95          {
+  96   1        TFT32_CS=0;
+  97   1        TFT32_RS=1;
+  98   1        TFT32_RD=1;
+  99   1        TFT32_WR=0;
+ 100   1        TFT32_DATA=b;
+ 101   1        _nop_();
+ 102   1        _nop_();
+ 103   1        _nop_();
+ 104   1        _nop_();
+ 105   1        TFT32_WR=1;
+ 106   1        TFT32_RS=0;
+ 107   1        TFT32_RD=1;
+ 108   1        TFT32_CS=1;
+ 109   1      }
+ 110          
+ 111          void comm_out(u8 m)
+ 112          {
+ 113   1        TFT32_CS=0;
+ 114   1        TFT32_RS=0;
+ 115   1        TFT32_RD=1;
+ 116   1        TFT32_WR=0;
+ 117   1        TFT32_DATA=m;
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 3   
+
+ 118   1        _nop_();
+ 119   1        _nop_();
+ 120   1        _nop_();
+ 121   1        TFT32_WR=1;
+ 122   1        TFT32_RS=0;
+ 123   1        TFT32_RD=1;
+ 124   1        TFT32_CS=1;
+ 125   1      }
+ 126          
+ 127          void ini_ILI9341()
+ 128          {
+ 129   1        TFT32_RST = 1; 
+ 130   1        Delayms(200);             //delay             
+ 131   1        TFT32_RST = 0; 
+ 132   1        Delayms(400);             //delay
+ 133   1        TFT32_RST = 1; 
+ 134   1        Delayms(400);             //delay 
+ 135   1       
+ 136   1      //************* Start Initial Sequence **********// 
+ 137   1        comm_out(0xCF);          //power control,address is 0xCF
+ 138   1        data_out(0x00);          //parameter #1
+ 139   1        data_out(0xC1);          //parameter #2
+ 140   1        data_out(0X30);          //parameter #3
+ 141   1       
+ 142   1        comm_out(0xED);          //Power on sequence control,address is 0xED
+ 143   1        data_out(0x64);          //parameter #1
+ 144   1        data_out(0x03);          //parameter #2
+ 145   1        data_out(0X12);          //parameter #3
+ 146   1        data_out(0X81);          //parameter #4
+ 147   1       
+ 148   1        comm_out(0xE8);          //Driver timing control A, address is 0xE8
+ 149   1        data_out(0x85);          //parameter #1
+ 150   1        data_out(0x10);          //parameter #2
+ 151   1        data_out(0x7A);          //parameter #3
+ 152   1       
+ 153   1        comm_out(0xCB);          //Power control A, address is 0xCB
+ 154   1        data_out(0x39);          //parameter #1
+ 155   1        data_out(0x2C);          //parameter #2
+ 156   1        data_out(0x00);          //parameter #3
+ 157   1        data_out(0x34);          //parameter #4
+ 158   1        data_out(0x02);          //parameter #5
+ 159   1       
+ 160   1        comm_out(0xF7);          //Pump ratio control,address is 0xF7
+ 161   1        data_out(0x20);          //parameter #1
+ 162   1       
+ 163   1        comm_out(0xEA);          //Driver timing control B,address is 0xEA
+ 164   1        data_out(0x00);          //parameter #1
+ 165   1        data_out(0x00);          //parameter #2
+ 166   1       
+ 167   1        comm_out(0xC0);          //Power control 1,address is 0xC0
+ 168   1        data_out(0x21);          //parameter #1,VRH[5:0] 
+ 169   1       
+ 170   1        comm_out(0xC1);          //Power control 2,address is 0xC1 
+ 171   1        data_out(0x13);          //parameter #1,SAP[2:0];BT[3:0] 
+ 172   1       
+ 173   1        comm_out(0xC5);          //VCM control 1,address is 0xC5
+ 174   1        data_out(0x3F);          //parameter #1
+ 175   1        data_out(0x3C);          //parameter #2
+ 176   1       
+ 177   1        comm_out(0xC7);          //VCM control 2,address is 0xC7 
+ 178   1        data_out(0XB3);          //parameter #1
+ 179   1       
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 4   
+
+ 180   1        comm_out(0x36);          //Memory Access Control, address is 0x36
+ 181   1        data_out(0x08);          //parameter #1
+ 182   1       
+ 183   1        comm_out(0x3A);          //Pixel Format Set,address is 0x3A
+ 184   1        data_out(0x55);          //parameter #1
+ 185   1      
+ 186   1        comm_out(0xB1);          //Frame Rate Control,address is 0xB1
+ 187   1        data_out(0x00);          //parameter #1
+ 188   1        data_out(0x1B);          //parameter #2
+ 189   1       
+ 190   1        comm_out(0xB6);          //Display Function Control,address is 0xB6 
+ 191   1        data_out(0x0A);          //parameter #1
+ 192   1        data_out(0xA2);          //parameter #2
+ 193   1      
+ 194   1        comm_out(0xF6);          //Interface Control,address is 0xF6
+ 195   1        data_out(0x01);          //parameter #1
+ 196   1        data_out(0x30);          //parameter #2
+ 197   1       
+ 198   1        comm_out(0xF2);          //Enable 3 gamma,address is 0xF2
+ 199   1        data_out(0x00);          //parameter #1,3Gamma Function Disable 
+ 200   1       
+ 201   1        comm_out(0x26);          //Gamma Set,address is 0x26
+ 202   1        data_out(0x01);          //Gamma curve selected 
+ 203   1       
+ 204   1        comm_out(0xE0);          //Positive Gamma Correction,address is 0xE0
+ 205   1        data_out(0x0F);          //parameter #1
+ 206   1        data_out(0x24);          //parameter #2
+ 207   1        data_out(0x21);          //parameter #3
+ 208   1        data_out(0x0C);          //parameter #4
+ 209   1        data_out(0x0F);          //parameter #5
+ 210   1        data_out(0x09);          //parameter #6
+ 211   1        data_out(0x4D);          //parameter #7
+ 212   1        data_out(0XB8);          //parameter #8
+ 213   1        data_out(0x3C);          //parameter #9
+ 214   1        data_out(0x0A);          //parameter #10
+ 215   1        data_out(0x13);          //parameter #11
+ 216   1        data_out(0x04);          //parameter #12
+ 217   1        data_out(0x0A);          //parameter #13
+ 218   1        data_out(0x05);          //parameter #14
+ 219   1        data_out(0x00);          //parameter #15
+ 220   1       
+ 221   1        comm_out(0XE1);          //Negative Gamma Correction,address is 0xE1
+ 222   1        data_out(0x00);          //parameter #1
+ 223   1        data_out(0x1B);          //parameter #2
+ 224   1        data_out(0x1E);          //parameter #3
+ 225   1        data_out(0x03);          //parameter #4
+ 226   1        data_out(0x10);          //parameter #5
+ 227   1        data_out(0x06);          //parameter #6
+ 228   1        data_out(0x32);          //parameter #7
+ 229   1        data_out(0x47);          //parameter #8
+ 230   1        data_out(0x43);          //parameter #9
+ 231   1        data_out(0x05);          //parameter #10
+ 232   1        data_out(0x0C);          //parameter #11
+ 233   1        data_out(0x0B);          //parameter #12
+ 234   1        data_out(0x35);          //parameter #13
+ 235   1        data_out(0x3A);          //parameter #14
+ 236   1        data_out(0x0F);          //parameter #15
+ 237   1       
+ 238   1        comm_out(0x11);          //Sleep Out, address is 0x11 
+ 239   1        Delayms(120);            //Delay 
+ 240   1        comm_out(0x29);          //Display on,address is 0x29 
+ 241   1      }
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 5   
+
+ 242          
+ 243          
+ 244          void display_horizontal_line(void)
+ 245          { 
+ 246   1        u8 j;
+ 247   1        u16 i;
+ 248   1        comm_out(0x2A); 
+ 249   1        data_out(0x00); 
+ 250   1        data_out(0x00); 
+ 251   1        data_out(0x00); 
+ 252   1        data_out(0xef);         
+ 253   1        comm_out(0x2b); 
+ 254   1        data_out(0x00); 
+ 255   1        data_out(0x00); 
+ 256   1        data_out(0x01); 
+ 257   1        data_out(0x3f); 
+ 258   1        comm_out(0x2C);  
+ 259   1        for(i=0;i<80;i++)
+ 260   1         for(j=0;j<240;j++)
+ 261   1           write_data(0x00,0x1f);  //blue color,80*240 
+ 262   1        for(i=0;i<80;i++)
+ 263   1         for(j=0;j<240;j++)
+ 264   1            write_data(0xff,0xff); //white color,80*240
+ 265   1        for(i=0;i<80;i++)
+ 266   1         for(j=0;j<240;j++)
+ 267   1            write_data(0xf8,0x00); //red color ,80*320
+ 268   1        for(i=0;i<80;i++)
+ 269   1          for(j=0;j<240;j++)
+ 270   1            write_data(0x07,0xe0); //green color, 80*320
+ 271   1      }
+ 272          
+ 273          void display_vertical_line(void)
+ 274          {
+ 275   1        u8 j;
+ 276   1        u16 i;
+ 277   1        comm_out(0x2A); 
+ 278   1        data_out(0x00); 
+ 279   1        data_out(0x00); 
+ 280   1        data_out(0x00); 
+ 281   1        data_out(0xef);         
+ 282   1        comm_out(0x2b); 
+ 283   1        data_out(0x00); 
+ 284   1        data_out(0x00); 
+ 285   1        data_out(0x01); 
+ 286   1        data_out(0x3f); 
+ 287   1        comm_out(0x2C);  
+ 288   1        for(i=0;i<320;i++)
+ 289   1        {
+ 290   2         for(j=0;j<60;j++)
+ 291   2           write_data(0x00,0xff);  //color,80*240 
+ 292   2         for(j=0;j<60;j++)
+ 293   2            write_data(0x0f,0xff); //color,80*240
+ 294   2         for(j=0;j<60;j++)
+ 295   2            write_data(0x48,0x00); //color ,80*320
+ 296   2          for(j=0;j<60;j++)
+ 297   2            write_data(0xa1,0xe0); //color, 80*320
+ 298   2        }
+ 299   1      }
+ 300          
+ 301          void display_squares(void)
+ 302          {
+ 303   1        u8 j,k;
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 6   
+
+ 304   1        u16 i;
+ 305   1        comm_out(0x2A); 
+ 306   1        data_out(0x00); 
+ 307   1        data_out(0x00); 
+ 308   1        data_out(0x00); 
+ 309   1        data_out(0xef);         
+ 310   1        comm_out(0x2b); 
+ 311   1        data_out(0x00); 
+ 312   1        data_out(0x00); 
+ 313   1        data_out(0x01); 
+ 314   1        data_out(0x3f); 
+ 315   1        comm_out(0x2C);
+ 316   1        for(k=0;k<4;k++)
+ 317   1         {  
+ 318   2           for(i=0;i<80;i++)
+ 319   2            {
+ 320   3              for(j=0;j<60;j++)
+ 321   3                write_data(0x00+k*60,0x00);  //color,80*240 
+ 322   3              for(j=0;j<60;j++)
+ 323   3                write_data(0x1f+k*20,0xff); //color,80*240
+ 324   3              for(j=0;j<60;j++)
+ 325   3                write_data(0x2f+k*50,0x00); //color ,80*320
+ 326   3              for(j=0;j<60;j++)
+ 327   3                write_data(0x3f+k*20,0xe0); //color, 80*320
+ 328   3            }
+ 329   2          }
+ 330   1      }
+ 331          void display_circle(void)
+ 332          {
+ 333   1        u8 j;
+ 334   1        u16 i,m,c;
+ 335   1        u16 k,l;
+ 336   1        m=10;
+ 337   1       for(c=0;c<10;c++)
+ 338   1       {
+ 339   2        comm_out(0x2A); 
+ 340   2        data_out(0x00); 
+ 341   2        data_out(0x00); 
+ 342   2        data_out(0x00); 
+ 343   2        data_out(0xef);         
+ 344   2        comm_out(0x2b); 
+ 345   2        data_out(0x00); 
+ 346   2        data_out(0x00); 
+ 347   2        data_out(0x01); 
+ 348   2        data_out(0x3f); 
+ 349   2        comm_out(0x2C);
+ 350   2        
+ 351   2        for(i=0;i<320;i++)
+ 352   2         {
+ 353   3           for(j=0;j<240;j++)
+ 354   3            {
+ 355   4             if(i<160 && j<120) 
+ 356   4             {    
+ 357   5              k=160-i;
+ 358   5              l=120-j;
+ 359   5             }
+ 360   4             else if(i>160&& j<120)
+ 361   4             {
+ 362   5              k=i-160;
+ 363   5              l=120-j;
+ 364   5             }
+ 365   4             else if(i<160 && j>120)
+C51 COMPILER V9.56.0.0   TFT32                                                             10/19/2017 23:38:03 PAGE 7   
+
+ 366   4             {
+ 367   5              k=160-i;
+ 368   5              l=j-120;
+ 369   5             }
+ 370   4             else
+ 371   4             {
+ 372   5              k=i-160;
+ 373   5              l=j-120;
+ 374   5             }  
+ 375   4             if((k*k+l*l)<=m*m)
+ 376   4                write_data(0xf8,0x00);  //color,80*240 
+ 377   4             else
+ 378   4                write_data(0x07,0xe0);
+ 379   4           }
+ 380   3         }
+ 381   2         Delayms(1000);
+ 382   2         m+=10;
+ 383   2       }
+ 384   1      }
+ 385           void displayPIC()
+ 386          {
+ 387   1        u16 i,j,k;
+ 388   1        u8 m;
+ 389   1        comm_out(0x2A);       
+ 390   1         data_out(0x00);
+ 391   1         data_out(0x00);
+ 392   1         data_out(0x00);
+ 393   1         data_out(0xEF);
+ 394   1      
+ 395   1         comm_out(0x2B);       
+ 396   1         data_out(0x00);
+ 397   1         data_out(0x00);
+ 398   1         data_out(0x01);
+ 399   1         data_out(0x3F);
+ 400   1      
+ 401   1         comm_out(0x2C);  
+ 402   1        for(m=0;m<4;m++)
+ 403   1        { 
+ 404   2          k=0;
+ 405   2          for(i=0;i<80;i++)
+ 406   2          {
+ 407   3            for(j=0;j<240;j++)
+ 408   3            {
+ 409   4              write_data(imagepict[k],imagepict[k+1]);
+ 410   4              k++;
+ 411   4              k++;
+ 412   4            }
+ 413   3          }
+ 414   2        }
+ 415   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1270    ----
+   CONSTANT SIZE    =  38400    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

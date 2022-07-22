@@ -1,0 +1,11 @@
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\src\irq.c
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rthw.h
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h
+rt_thread\irq.o: .\RTE\RTOS\rtconfig.h
+rt_thread\irq.o: .\RTE\_RT_Thread\RTE_Components.h
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtdef.h
+rt_thread\irq.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtservice.h
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtm.h
+rt_thread\irq.o: D:\Keil_MDK\RealThread\RT-Thread\3.1.3\include\rtthread.h

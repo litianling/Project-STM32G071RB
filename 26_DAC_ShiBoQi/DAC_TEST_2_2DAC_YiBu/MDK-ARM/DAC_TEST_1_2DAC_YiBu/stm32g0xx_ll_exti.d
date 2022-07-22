@@ -1,0 +1,11 @@
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_exti.c
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_exti.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g071xx.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/core_cm0plus.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_version.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+dac_test_1_2dac_yibu\stm32g0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h

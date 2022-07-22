@@ -1,0 +1,1 @@
+tim_capture_test_3\startup_stm32g071xx.o: startup_stm32g071xx.s

@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"tft_test_1\startup_stm32g071xx.o"
+"tft_test_1\main.o"
+"tft_test_1\stm32g0xx_it.o"
+"tft_test_1\stm32g0xx_hal_msp.o"
+"tft_test_1\stm32g0xx_hal_tim.o"
+"tft_test_1\stm32g0xx_hal_tim_ex.o"
+"tft_test_1\stm32g0xx_hal_rcc.o"
+"tft_test_1\stm32g0xx_hal_rcc_ex.o"
+"tft_test_1\stm32g0xx_ll_rcc.o"
+"tft_test_1\stm32g0xx_hal_flash.o"
+"tft_test_1\stm32g0xx_hal_flash_ex.o"
+"tft_test_1\stm32g0xx_hal_gpio.o"
+"tft_test_1\stm32g0xx_hal_dma.o"
+"tft_test_1\stm32g0xx_hal_dma_ex.o"
+"tft_test_1\stm32g0xx_ll_dma.o"
+"tft_test_1\stm32g0xx_hal_pwr.o"
+"tft_test_1\stm32g0xx_hal_pwr_ex.o"
+"tft_test_1\stm32g0xx_hal_cortex.o"
+"tft_test_1\stm32g0xx_hal.o"
+"tft_test_1\stm32g0xx_hal_exti.o"
+"tft_test_1\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "TFT_TEST_1\TFT_TEST_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TFT_TEST_1.map" -o TFT_TEST_1\TFT_TEST_1.axf

@@ -1,0 +1,1 @@
+spi_fullduplex_compolling_slave\exe\startup_stm32g071xx.o: startup_stm32g071xx.s

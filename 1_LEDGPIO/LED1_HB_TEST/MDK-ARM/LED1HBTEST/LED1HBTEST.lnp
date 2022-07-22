@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"led1hbtest\startup_stm32g071xx.o"
+"led1hbtest\main.o"
+"led1hbtest\stm32g0xx_it.o"
+"led1hbtest\stm32g0xx_hal_msp.o"
+"led1hbtest\stm32g0xx_hal_tim.o"
+"led1hbtest\stm32g0xx_hal_tim_ex.o"
+"led1hbtest\stm32g0xx_hal_rcc.o"
+"led1hbtest\stm32g0xx_hal_rcc_ex.o"
+"led1hbtest\stm32g0xx_ll_rcc.o"
+"led1hbtest\stm32g0xx_hal_flash.o"
+"led1hbtest\stm32g0xx_hal_flash_ex.o"
+"led1hbtest\stm32g0xx_hal_gpio.o"
+"led1hbtest\stm32g0xx_hal_dma.o"
+"led1hbtest\stm32g0xx_hal_dma_ex.o"
+"led1hbtest\stm32g0xx_ll_dma.o"
+"led1hbtest\stm32g0xx_hal_pwr.o"
+"led1hbtest\stm32g0xx_hal_pwr_ex.o"
+"led1hbtest\stm32g0xx_hal_cortex.o"
+"led1hbtest\stm32g0xx_hal.o"
+"led1hbtest\stm32g0xx_hal_exti.o"
+"led1hbtest\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "LED1HBTEST\LED1HBTEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED1HBTEST.map" -o LED1HBTEST\LED1HBTEST.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"bianmaqi\startup_stm32g071xx.o"
+"bianmaqi\main.o"
+"bianmaqi\stm32g0xx_it.o"
+"bianmaqi\stm32g0xx_hal_msp.o"
+"bianmaqi\stm32g0xx_hal_tim.o"
+"bianmaqi\stm32g0xx_hal_tim_ex.o"
+"bianmaqi\stm32g0xx_hal_rcc.o"
+"bianmaqi\stm32g0xx_hal_rcc_ex.o"
+"bianmaqi\stm32g0xx_ll_rcc.o"
+"bianmaqi\stm32g0xx_hal_flash.o"
+"bianmaqi\stm32g0xx_hal_flash_ex.o"
+"bianmaqi\stm32g0xx_hal_gpio.o"
+"bianmaqi\stm32g0xx_hal_dma.o"
+"bianmaqi\stm32g0xx_hal_dma_ex.o"
+"bianmaqi\stm32g0xx_ll_dma.o"
+"bianmaqi\stm32g0xx_hal_pwr.o"
+"bianmaqi\stm32g0xx_hal_pwr_ex.o"
+"bianmaqi\stm32g0xx_hal_cortex.o"
+"bianmaqi\stm32g0xx_hal.o"
+"bianmaqi\stm32g0xx_hal_exti.o"
+"bianmaqi\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "BIANMAQI\BIANMAQI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BIANMAQI.map" -o BIANMAQI\BIANMAQI.axf

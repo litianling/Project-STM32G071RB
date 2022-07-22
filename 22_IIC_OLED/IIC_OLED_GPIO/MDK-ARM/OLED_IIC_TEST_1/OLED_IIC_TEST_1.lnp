@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"oled_iic_test_1\startup_stm32g071xx.o"
+"oled_iic_test_1\main.o"
+"oled_iic_test_1\stm32g0xx_it.o"
+"oled_iic_test_1\stm32g0xx_hal_msp.o"
+"oled_iic_test_1\stm32g0xx_hal_tim.o"
+"oled_iic_test_1\stm32g0xx_hal_tim_ex.o"
+"oled_iic_test_1\stm32g0xx_hal_rcc.o"
+"oled_iic_test_1\stm32g0xx_hal_rcc_ex.o"
+"oled_iic_test_1\stm32g0xx_ll_rcc.o"
+"oled_iic_test_1\stm32g0xx_hal_flash.o"
+"oled_iic_test_1\stm32g0xx_hal_flash_ex.o"
+"oled_iic_test_1\stm32g0xx_hal_gpio.o"
+"oled_iic_test_1\stm32g0xx_hal_dma.o"
+"oled_iic_test_1\stm32g0xx_hal_dma_ex.o"
+"oled_iic_test_1\stm32g0xx_ll_dma.o"
+"oled_iic_test_1\stm32g0xx_hal_pwr.o"
+"oled_iic_test_1\stm32g0xx_hal_pwr_ex.o"
+"oled_iic_test_1\stm32g0xx_hal_cortex.o"
+"oled_iic_test_1\stm32g0xx_hal.o"
+"oled_iic_test_1\stm32g0xx_hal_exti.o"
+"oled_iic_test_1\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "OLED_IIC_TEST_1\OLED_IIC_TEST_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLED_IIC_TEST_1.map" -o OLED_IIC_TEST_1\OLED_IIC_TEST_1.axf

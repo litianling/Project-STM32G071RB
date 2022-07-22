@@ -1,0 +1,11 @@
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\src\idle.c
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rthw.h
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rtthread.h
+led_control\idle.o: .\RTE\RTOS\rtconfig.h
+led_control\idle.o: .\RTE\_LED_Control\RTE_Components.h
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rtdebug.h
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rtdef.h
+led_control\idle.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rtservice.h
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rtm.h
+led_control\idle.o: C:\Users\hebin\AppData\Local\Arm\Packs\RealThread\RT-Thread\3.1.3\include\rtthread.h
